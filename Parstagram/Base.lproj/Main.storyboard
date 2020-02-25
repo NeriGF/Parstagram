@@ -151,7 +151,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="This is a fake comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvw-AD-gnv">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a fake comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvw-AD-gnv">
                                                     <rect key="frame" x="54.5" y="15" width="176" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -165,12 +165,37 @@
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hvw-AD-gnv" secondAttribute="bottom" constant="8" id="PUO-hL-FmQ"/>
                                                 <constraint firstItem="hvw-AD-gnv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XgL-Hf-XDs" secondAttribute="trailing" constant="8" id="fr1-Ja-y3d"/>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="XgL-Hf-XDs" secondAttribute="bottom" constant="8" id="lCH-Yc-j9D"/>
+                                                <constraint firstItem="hvw-AD-gnv" firstAttribute="top" secondItem="3gb-Lt-BrA" secondAttribute="topMargin" constant="4" id="req-Cf-URw"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hvw-AD-gnv" secondAttribute="bottom" constant="-3" id="vVM-E1-9YS"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="commentLabel" destination="hvw-AD-gnv" id="g1y-Yr-4jB"/>
                                             <outlet property="nameLabel" destination="XgL-Hf-XDs" id="7SU-np-Uuw"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="Dpf-ua-Na7">
+                                        <rect key="frame" x="0.0" y="506" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dpf-ua-Na7" id="DhT-aS-pLI">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gx-xS-6ba">
+                                                    <rect key="frame" x="15" y="12" width="135" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.56847069300518127" green="0.56847069300518127" blue="0.56847069300518127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5gx-xS-6ba" firstAttribute="leading" secondItem="DhT-aS-pLI" secondAttribute="leading" constant="16" id="2qK-FM-HPi"/>
+                                                <constraint firstItem="5gx-xS-6ba" firstAttribute="top" secondItem="DhT-aS-pLI" secondAttribute="top" constant="8" id="TAj-xw-jsL"/>
+                                                <constraint firstAttribute="bottom" secondItem="5gx-xS-6ba" secondAttribute="bottom" constant="8" id="TvN-2V-8rb"/>
+                                                <constraint firstAttribute="trailing" secondItem="5gx-xS-6ba" secondAttribute="trailing" constant="8" id="U1p-3U-2gv"/>
+                                                <constraint firstItem="5gx-xS-6ba" firstAttribute="top" secondItem="DhT-aS-pLI" secondAttribute="top" constant="8" id="xHF-Yl-ROr"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
